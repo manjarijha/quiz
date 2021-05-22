@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="styles.css">
+      <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+<body onload="loadingpage()">
+
+    <!--LOADER SECTION-->
+    <div id="loader">
+        <div id="loading"> <h3>L <i class="fas fa-circle-notch"></i> ADING </h3> </div>
+    </div>
+    <!--LOADER SECTION-->
+<div id="page">
+<div class="bg1">
+<div class="navigation">
+<h1> QUIZ </h1>
+</div>
+<div class="parent">
+
+<form name="quiz" id="quiz">
+<!--COPY-->
+<div class="child" id="one">
+<h2>1.  who is the richest person ?</h2>
+<div class="opt">
+<p><input class="options" type="radio" name="question1" value="BillGates"> Bill Gates </p>
+<p><input class="options" type="radio" name="question1" value="BernardArnault&Family"> Bernard Arnault & Family  </p>
+<p><input class="options" type="radio" name="question1" value="ElonMusk"> Elon Musk </p>
+<p><input class="options" type="radio" name="question1" value="JeffBezos">Jeff Bezos  </p>
+</div>
+<!--COPY-->
+
+</div>
+</div>
+
+
+<div class="parent">
+
+<!--COPY-->
+<div class="child" id="one">
+<h2>2.  What is the second stroke in a Petrol engine? ?</h2>
+<div class="opt">
+<p><input class="options" type="radio" name="question2" value="IntakeStroke"> Intake Stroke  </p>
+<p><input class="options" type="radio" name="question2" value="PowerStroke">Power Stroke </p>
+<p><input class="options" type="radio" name="question2" value="CompressionStroke"> Compression Stroke   </p>
+<p><input class="options" type="radio" name="question2" value="ExhaustStroke">  Exhaust Stroke</p>
+</div>
+<!--COPY-->
+
+</div>
+</div>
+
+
+<div class="parent">
+
+<!--COPY-->
+<div class="child" id="one">
+<h2>3.Which company owns the following brands: Bentley, Buggati, Lamborghini & Audi?</h2>
+<div class="opt">
+<p><input class="options" type="radio" name="question3" value="Mercedes-Benz"> Mercedes-Benz </p>
+<p><input class="options" type="radio" name="question3" value="Volkswagen">  Volkswagen </p>
+<p><input class="options" type="radio" name="question3" value="Audi">  Audi </p>
+<p><input class="options" type="radio" name="question3" value="BMW">  BMW </p>
+</div>
+<!--COPY-->
+
+</div>
+</div>
+    
+
+
+    <div class="parent">
+
+<!--COPY-->
+<div class="child" id="one">
+<h2>4. Which amongst the following is a South Korean car maker ?</h2>
+<div class="opt">
+<p><input class="options" type="radio" name="question4" value="Mazda"> Mazda </p>
+<p><input class="options" type="radio" name="question4" value="Kia"> Kia  </p>
+<p><input class="options" type="radio" name="question4" value="Dodge"> Dodge </p>
+<p><input class="options" type="radio" name="question4" value="Opel">Opel  </p>
+</div>
+<!--COPY-->
+
+</div>
+</div>
+    
+
+    <div class="parent">
+
+<!--COPY-->
+<div class="child" id="one">
+<h2>5. Lexus is the luxury vehicle division of Japanese automaker ?</h2>
+<div class="opt">
+<p><input class="options" type="radio" name="question5" value="Nissan">Nissan  </p>
+<p><input class="options" type="radio" name="question5" value="Honda">  Honda </p>
+<p><input class="options" type="radio" name="question5" value="Mazda">  Mazda </p>
+<p><input class="options" type="radio" name="question5" value="Toyota"> Toyota  </p>
+</div>
+<!--COPY-->
+
+</div>
+</div>
+<div class="btn"><input type="button" value="Submit" onclick="check()"> </div>
+</div>
+</form>
+    <!--ended questions-->
+    <!--RESULTS PAGE-->
+    <div class="bg2">
+    <div class="result" id="resultr">
+    <h1>result</h1>
+  <div class="main">
+  <h2>No. Of Questions Attempted :      <span id="qa">0</span> </h2>   
+  <h2>No. Of Questions Unattempted :    <span id="qu">0</span>  </h2>   
+  <h2>No. Of Correct Answers :          <span id="ca">0</span>  </h2>   
+  <h2>No. Of Wrong Answers :            <span id="wa">0</span> </h2>   
+  <h2>Accuracy:                         <span id="ac">0</span> % </h2>   
+
+  </div>
+    </div>
+    </div>
+    <!--RESULTS PAGE-->
+</div>
+</body>
+<script src="script.js">
+</script>
+</html>
